@@ -97,8 +97,11 @@
     padding-top: 11px;
 }
 
+.mrs {
+    margin-right: 20px;
+}
+
 .nav_btn {
-    margin-left: 20px;
     color: #F4241E;
     font-weight: 500;
     font-size: 20px;
@@ -241,15 +244,18 @@
     border-radius: 10px;
     padding: 12px 35px;
     margin-bottom: 40px;
+    border: none;
 }
 
 .w_10 {
     max-width: 123px;
     height: 123px;
 }
-.imgpt{
+
+.imgpt {
     padding-top: 24px;
 }
+
 .bg_yellows {
     background-color: #F6E300;
 }
@@ -327,15 +333,15 @@
 }
 
 .card {
-    padding: 10px 50px;
+    padding: 10px 10px;
     position: relative;
     background-color: #F6E300;
-    width: 70%;
+    width: 100%;
 
 }
 
 .text-box {
-    padding: 7px 35px;
+    padding: 12px 15px;
     background-color: white;
     position: relative;
     border-radius: 6px;
@@ -345,19 +351,19 @@
 }
 
 .left-card {
-    left: -10%;
+    left: -55%;
 }
 
 .right-card {
-    left: 60%;
+    left: 55%;
 }
 
 .card::after {
     content: '';
     position: absolute;
-    width: 35px;
-    height: 35px;
-    right: -17px;
+    width: 30px;
+    height: 30px;
+    right: -39%;
     background-color: #FFFFFF;
     top: 0px;
     border-radius: 50%;
@@ -365,17 +371,21 @@
 }
 
 .right-card::after {
-    left: -16px;
+    left: -7.7%;
+}
+
+.left-card::after {
+    right: -8%;
 }
 
 .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    height: 400px;
+    height: 370px;
     background-color: #F4241E;
     top: 0;
-    left: 51.5%;
+    left: 39.5%;
     margin-left: 57px;
     animation: moveline 6s linear forwards;
 }
@@ -388,6 +398,10 @@
     70% {
         height: 70%;
     }
+}
+
+.lpt {
+    padding-top: 10px;
 }
 
 .burger1 {
@@ -486,7 +500,7 @@
 }
 
 .accordian {
-    margin: 10px auto;
+    margin: 4px auto;
     width: 928px;
 }
 
@@ -495,12 +509,12 @@
     width: 100%;
     margin-bottom: 10px;
     background-color: #FFF03F;
-    padding: 23px 31px;
+    padding: 13px 31px;
     border-radius: 4px;
 }
 
 .accordian li label {
-    padding: 10px;
+    padding: 3px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -526,7 +540,7 @@
 }
 
 .content {
-    padding: 7px;
+    padding: 4px;
     line-height: 26px;
     max-height: 0px;
     overflow: hidden;
@@ -562,7 +576,7 @@
 }
 
 .mtop {
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 @media (max-width:1400px) {
@@ -649,23 +663,52 @@
         display: none;
     }
 
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+
     .card {
-        padding: 10px 40px;
+        padding: 3px 5px;
+        width: 100%;
     }
 
     .text-box {
-        padding: 7px 30px;
-        font-size: 22px;
+        padding: 4px 8px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .left-card {
+        left: -57%;
+    }
+
+    .right-card {
+        left: 57%;
+    }
+
+    .card::after {
+        width: 30px;
+        height: 30px;
+        right: -39%;
+
+    }
+
+    .right-card::after {
+        left: -11.5%;
+    }
+
+    .left-card::after {
+        right: -11%;
     }
 
     .timeline::after {
-        width: 6px;
-        height: 400px;
-        left: 50%;
+        top: 5px;
+        left: 33.5%;
+        height: 300px;
     }
-}
 
-@media(max-width: 1060px) {
     .nav_mlr {
         margin-left: 10px;
         margin-right: 10px;
@@ -693,6 +736,7 @@
     .hum3 {
         display: none;
     }
+
 }
 
 @media(max-width: 992px) {
@@ -715,28 +759,62 @@
         display: none;
     }
 
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+
     .card {
-        padding: 10px 40px;
+        padding: 3px 5px;
+        width: 100%;
     }
 
     .text-box {
-        padding: 7px 30px;
-        font-size: 15px;
+        padding: 4px 8px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .left-card {
+        left: -4%;
+    }
+
+    .right-card {
+        left: -4%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .card::after {
+        width: 30px;
+        height: 30px;
+        right: -39%;
+    }
+
+    .right-card::after {
+        left: -19%;
+    }
+
+    .left-card::after {
+        left: -19%;
     }
 
     .timeline::after {
-        width: 6px;
-        height: 400px;
-        left: 47.5%;
+        top: 5px;
+        left: -35%;
+        height: 345px;
     }
 
+
+
     .nav_mlr {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
 
     .nav_btn {
-        margin-left: 5px;
+        margin-left: 2px;
         font-weight: 300;
         font-size: 12px;
         padding: 8px 16px;
@@ -797,7 +875,7 @@
         background-color: #2482fe;
         pointer-events: none;
         opacity: 0;
-        transition: all 1s linear;
+        transition: all 1.5s linear;
         gap: 20px;
 
     }
@@ -835,33 +913,53 @@
         margin-left: 103px;
     }
 
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+
     .card {
-        width: 90%;
-        padding-left: 60px;
-        padding: 15px 50px;
+        padding: 3px 5px;
+        width: 100%;
     }
 
     .text-box {
-        font-size: 13px;
-        padding: 7px 20px;
-        line-height: 20px;
-    }
-
-    .right-card {
-        left: 15%;
+        padding: 4px 8px;
+        font-size: 16px;
+        line-height: 30px;
     }
 
     .left-card {
-        left: 15%;
+        left: -4%;
+    }
+
+    .right-card {
+        left: -4%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .card::after {
+        width: 30px;
+        height: 30px;
+        right: -39%;
     }
 
     .right-card::after {
-        left: -10%;
+        left: -17%;
     }
 
     .left-card::after {
-        right: 100%;
+        left: -17%;
     }
+
+    .timeline::after {
+        top: 5px;
+        left: -45%;
+        height: 345px;
+    }
+
 
     .burger7 {
         display: none;
@@ -890,9 +988,10 @@
     .im-mt-md {
         margin-top: 25px;
     }
-         .logo {
-             max-width: 224px;
-         }
+
+    .logo {
+        max-width: 224px;
+    }
 }
 
 @media (max-width:576px) {
@@ -901,9 +1000,11 @@
         padding-left: 12px;
         padding-right: 12px;
     }
-.img-sm-pt{
-    padding-top: 25px;
-}
+
+    .img-sm-pt {
+        padding-top: 25px;
+    }
+
     .img4 {
         display: none;
     }
@@ -945,7 +1046,7 @@
     .timeline::after {
         left: 31px;
         width: 6px;
-        height: 400px;
+        height: 40px;
         top: 13px;
         left: -11%;
         margin-left: 72px;
@@ -955,6 +1056,7 @@
         width: 70%;
         padding: 15px 60px;
     }
+
     .text-box {
         font-size: 12px;
         padding: 7px 10px;
@@ -964,6 +1066,8 @@
 
     .right-card {
         left: 15%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .left-card {
@@ -973,10 +1077,12 @@
     .right-card::after {
         left: -13%;
     }
+
     .left-card::after {
-        right: 100%;
+        left: -13%;
     }
-    .logo{
-        max-width:192px ;
+
+    .logo {
+        max-width: 192px;
     }
 }
