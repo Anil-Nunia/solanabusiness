@@ -86,6 +86,7 @@
 .nav1 {
     color: #F4241E;
     padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 .nav_mlr {
@@ -95,6 +96,7 @@
 
 .logo {
     padding-top: 11px;
+    padding-bottom: 11px;
 }
 
 .mrs {
@@ -110,6 +112,7 @@
     background: #FFFFFF;
     border-radius: 10px;
     margin-top: 14px;
+    margin-bottom: 14px;
 }
 
 .nav_bt {
@@ -215,7 +218,7 @@
     font-size: 48px;
     line-height: 72px;
     color: #000000;
-    padding-top: 60px;
+    padding-top: 86px;
 }
 
 .main3 {
@@ -225,8 +228,8 @@
     color: #000000;
     opacity: 0.8;
     max-width: 591px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 48px;
 }
 
 .bg_color {
@@ -242,7 +245,7 @@
     color: #FFFFFF;
     background: #F4241E;
     border-radius: 10px;
-    padding: 12px 35px;
+    padding: 15px 32px;
     margin-bottom: 40px;
     border: none;
 }
@@ -316,6 +319,7 @@
     line-height: 72px;
     color: #000000;
     padding-top: 70px;
+    padding-bottom: 60px;
 }
 
 .relative {
@@ -328,20 +332,47 @@
 
 .timeline {
     position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
-}
-
-.card {
-    padding: 10px 10px;
-    position: relative;
-    background-color: #F6E300;
     width: 100%;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #F4241E;
+    top: 1px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    animation: moveline 2s linear forwards;
+}
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+.timelinecard {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
 
 }
-
+.timelinecard::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: -17px;
+    background-color: #FFFFFF;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
 .text-box {
-    padding: 12px 15px;
+    padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
@@ -350,75 +381,36 @@
     color: #000000;
 }
 
-.left-card {
-    left: -55%;
+.left{
+    left: 0;
 }
 
-.right-card {
-    left: 55%;
+.right{
+    left: 50%;
 }
 
-.card::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: -39%;
-    background-color: #FFFFFF;
-    top: 0px;
-    border-radius: 50%;
-    z-index: 1;
+.right::after {
+    left: -17px;
 }
-
-.right-card::after {
-    left: -7.7%;
-}
-
-.left-card::after {
-    right: -8%;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 370px;
-    background-color: #F4241E;
-    top: 0;
-    left: 39.5%;
-    margin-left: 57px;
-    animation: moveline 6s linear forwards;
-}
-
-@keyframes moveline {
-    0% {
-        height: 0;
-    }
-
-    70% {
-        height: 70%;
-    }
-}
-
 .lpt {
     padding-top: 10px;
 }
 
 .burger1 {
     position: absolute;
-    left: 27%;
-    top: 7%;
+    left: 20%;
+    top: 1%;
 }
 
 .burger2 {
     position: absolute;
-    left: 7%;
-    top: 40%;
+    left: 4%;
+    top: 35%;
 }
 
 .burger3 {
     position: absolute;
-    left: 35%;
+    left: 25%;
     top: 52%;
 }
 
@@ -453,7 +445,7 @@
 }
 
 .bur-pb {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 
 .bg-colr {
@@ -527,7 +519,7 @@
 }
 
 .accordian li label span {
-    transform: rotate(90deg);
+    transform: rotate(225deg);
     font-size: 48px;
     font-weight: 400px;
     color: #000000;
@@ -662,69 +654,16 @@
     .burger1 {
         display: none;
     }
-
-    .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 100px auto;
-    }
-
-    .card {
-        padding: 3px 5px;
-        width: 100%;
-    }
-
-    .text-box {
-        padding: 4px 8px;
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .left-card {
-        left: -57%;
-    }
-
-    .right-card {
-        left: 57%;
-    }
-
-    .card::after {
-        width: 30px;
-        height: 30px;
-        right: -39%;
-
-    }
-
-    .right-card::after {
-        left: -11.5%;
-    }
-
-    .left-card::after {
-        right: -11%;
-    }
-
-    .timeline::after {
-        top: 5px;
-        left: 33.5%;
-        height: 300px;
-    }
-
     .nav_mlr {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 18px;
+        margin-right: 18px;
     }
-
     .nav_btn {
         margin-left: 10px;
         font-weight: 300;
         font-size: 18px;
         padding: 8px 20px;
     }
-
-    .logo {
-        max-width: 20%;
-    }
-
     .cheese1 {
         display: none;
     }
@@ -736,7 +675,9 @@
     .hum3 {
         display: none;
     }
-
+.logo {
+    max-width: 200px;
+}
 }
 
 @media(max-width: 992px) {
@@ -759,69 +700,15 @@
         display: none;
     }
 
-    .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 100px auto;
-    }
+    
 
-    .card {
-        padding: 3px 5px;
-        width: 100%;
-    }
-
-    .text-box {
-        padding: 4px 8px;
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .left-card {
-        left: -4%;
-    }
-
-    .right-card {
-        left: -4%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .card::after {
-        width: 30px;
-        height: 30px;
-        right: -39%;
-    }
-
-    .right-card::after {
-        left: -19%;
-    }
-
-    .left-card::after {
-        left: -19%;
-    }
-
-    .timeline::after {
-        top: 5px;
-        left: -35%;
-        height: 345px;
-    }
-
-
-
-    .nav_mlr {
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-
+    
+    
     .nav_btn {
         margin-left: 2px;
         font-weight: 300;
         font-size: 12px;
         padding: 8px 16px;
-    }
-
-    .logo {
-        max-width: 20%;
     }
 }
 
@@ -845,7 +732,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 992px) {
     label[for="iconbar"] {
         width: 35px;
         height: 25px;
@@ -862,7 +749,7 @@
         background-color: red;
     }
 
-    .md_screen {
+    .lg_screen {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -875,12 +762,12 @@
         background-color: #2482fe;
         pointer-events: none;
         opacity: 0;
-        transition: all 1.5s linear;
+        transition: all 0.5s linear;
         gap: 20px;
 
     }
 
-    input[type="checkbox"]:checked+ul.md_screen {
+    input[type="checkbox"]:checked+ul.lg_screen {
         left: 0;
         pointer-events: all;
         opacity: 1;
@@ -898,69 +785,6 @@
         margin: 10px auto;
         width: 528px;
     }
-
-    .timeline {
-        margin: 50px auto;
-        width: px;
-    }
-
-    .timeline::after {
-        left: 31px;
-        width: 6px;
-        height: 300px;
-        top: 13px;
-        left: -15%;
-        margin-left: 103px;
-    }
-
-    .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 100px auto;
-    }
-
-    .card {
-        padding: 3px 5px;
-        width: 100%;
-    }
-
-    .text-box {
-        padding: 4px 8px;
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .left-card {
-        left: -4%;
-    }
-
-    .right-card {
-        left: -4%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .card::after {
-        width: 30px;
-        height: 30px;
-        right: -39%;
-    }
-
-    .right-card::after {
-        left: -17%;
-    }
-
-    .left-card::after {
-        left: -17%;
-    }
-
-    .timeline::after {
-        top: 5px;
-        left: -45%;
-        height: 345px;
-    }
-
-
     .burger7 {
         display: none;
     }
@@ -992,6 +816,31 @@
     .logo {
         max-width: 224px;
     }
+        .timeline::after {
+            left: 31px;
+            top: 2px;
+        }
+        .timelinecard {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+
+        .timelinecard::before {
+            left: 60px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .left::after,
+        .right::after {
+            left: 14px;
+        }
+    
+        .right {
+            left: 0%;
+        }
+        
 }
 
 @media (max-width:576px) {
@@ -1023,9 +872,11 @@
 
     .accordian {
         margin: 10px auto;
-        width: 328px;
+        width: 314px;
     }
-
+.accordian li {
+    padding: 11px 21px;
+}
     .logo111img {
         width: 100%;
     }
@@ -1037,51 +888,6 @@
     .group1 {
         max-width: 145px;
     }
-
-    .timeline {
-        margin: 40px auto;
-        width: 350px;
-    }
-
-    .timeline::after {
-        left: 31px;
-        width: 6px;
-        height: 40px;
-        top: 13px;
-        left: -11%;
-        margin-left: 72px;
-    }
-
-    .card {
-        width: 70%;
-        padding: 15px 60px;
-    }
-
-    .text-box {
-        font-size: 12px;
-        padding: 7px 10px;
-        line-height: 20px;
-        font-weight: 300px;
-    }
-
-    .right-card {
-        left: 15%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .left-card {
-        left: 15%;
-    }
-
-    .right-card::after {
-        left: -13%;
-    }
-
-    .left-card::after {
-        left: -13%;
-    }
-
     .logo {
         max-width: 192px;
     }
